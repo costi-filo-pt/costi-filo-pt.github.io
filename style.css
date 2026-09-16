@@ -531,11 +531,12 @@ h2 {
     }
 
     .language-switcher {
-        order: 3;
+        order: 2;
         align-self: flex-start;
     }
 
     .site-nav {
+        order: 3;
         width: 100%;
         justify-content: flex-start;
     }
