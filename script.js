@@ -2,6 +2,9 @@ const form = document.getElementById("lead-form");
 const status = document.getElementById("form-status");
 const year = document.getElementById("current-year");
 const languageButtons = document.querySelectorAll("[data-language]");
+const menuToggle = document.querySelector(".menu-toggle");
+const siteHeader = document.querySelector(".site-header");
+const menuLinks = document.querySelectorAll(".site-nav a");
 const titleMap = {
     en: "Costi Filofie | Personal Trainer",
     ro: "Costi Filofie | Antrenor Personal"
@@ -230,13 +233,42 @@ function applyLanguage(language) {
     localStorage.setItem("costi-language", selectedLanguage);
 }
 
+function closeMenu() {
+    if (!menuToggle || !siteHeader) {
+        return;
+    }
+
+    menuToggle.setAttribute("aria-expanded", "false");
+    siteHeader.classList.remove("menu-open");
+}
+
 if (year) {
     year.textContent = String(new Date().getFullYear());
+}
+
+if (menuToggle && siteHeader) {
+    menuToggle.addEventListener("click", () => {
+        const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
+
+        menuToggle.setAttribute("aria-expanded", String(!isExpanded));
+        siteHeader.classList.toggle("menu-open", !isExpanded);
+    });
 }
 
 languageButtons.forEach((button) => {
     button.addEventListener("click", () => {
         applyLanguage(button.dataset.language);
+        if (window.innerWidth <= 640) {
+            closeMenu();
+        }
+    });
+});
+
+menuLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+        if (window.innerWidth <= 640) {
+            closeMenu();
+        }
     });
 });
 
