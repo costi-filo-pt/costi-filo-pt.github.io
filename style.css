@@ -230,6 +230,24 @@ h1 {
     margin: 0 0 0.8rem;
 }
 
+.image-frame {
+    overflow: hidden;
+    border-radius: calc(var(--radius-lg) - 6px);
+    background: rgba(255, 255, 255, 0.45);
+}
+
+.image-frame img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-image-frame {
+    margin-bottom: 1.2rem;
+    aspect-ratio: 4 / 4.7;
+}
+
 .hero-card dl {
     margin: 1.25rem 0 0;
     display: grid;
@@ -288,6 +306,14 @@ h1 {
 
 .section-heading {
     margin-bottom: 2rem;
+}
+
+.section-photo {
+    float: right;
+    width: min(18rem, 45%);
+    aspect-ratio: 4 / 5;
+    margin: 0 0 1rem 1.25rem;
+    box-shadow: var(--shadow);
 }
 
 .section-heading.narrow {
@@ -367,6 +393,12 @@ h2 {
 
 .testimonial-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.results-banner {
+    aspect-ratio: 16 / 6;
+    margin-bottom: 1.2rem;
+    box-shadow: var(--shadow);
 }
 
 .testimonial-card {
@@ -473,6 +505,12 @@ h2 {
     h1,
     h2 {
         max-width: none;
+    }
+
+    .section-photo {
+        float: none;
+        width: 100%;
+        margin: 0 0 1rem;
     }
 }
 

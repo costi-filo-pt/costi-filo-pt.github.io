@@ -44,6 +44,12 @@
                 </ul>
             </div>
             <aside class="hero-card" aria-label="Coach introduction">
+                <figure class="image-frame hero-image-frame">
+                    <img
+                        src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=900&q=80"
+                        alt="Personal training session in a gym"
+                    >
+                </figure>
                 <div class="card-kicker">Meet Your Coach</div>
                 <h2>Costi Filofie</h2>
                 <p>
@@ -88,6 +94,12 @@
                 <h2>Coaching that fits busy lives instead of fighting them.</h2>
             </div>
             <div class="section-copy">
+                <figure class="image-frame section-photo">
+                    <img
+                        src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1200&q=80"
+                        alt="Athlete stretching with resistance bands"
+                    >
+                </figure>
                 <p>
                     Many people do not need more random workouts. They need a clear plan, honest feedback, and someone who knows how to
                     turn good intentions into weekly action. Costi's coaching is built around exactly that.
@@ -158,6 +170,12 @@
                 <p class="eyebrow">Results and Social Proof</p>
                 <h2>Replace these placeholders with real client wins when available.</h2>
             </div>
+            <div class="results-banner image-frame">
+                <img
+                    src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=1400&q=80"
+                    alt="Two people training together in a bright gym"
+                >
+            </div>
             <div class="testimonial-grid">
                 <blockquote class="testimonial-card">
                     <p>
@@ -210,12 +228,15 @@
                     replace the placeholder form action with a real endpoint such as Formspree.
                 </p>
                 <ul class="contact-details">
-                    <li>Email: [yourname@example.com]</li>
+                    <li>Email: costi.filo.pt@gmail.com</li>
                     <li>Phone / WhatsApp: [Your Number]</li>
                     <li>Instagram: [@YourHandle]</li>
                 </ul>
             </div>
-            <form class="contact-form" id="lead-form" action="https://formspree.io/f/your-form-id" method="POST">
+            <form class="contact-form" id="lead-form" action="https://formsubmit.co/ajax/costi.filo.pt@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="New enquiry from Costi Filofie website">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
                 <label>
                     Full Name
                     <input type="text" name="name" placeholder="Your full name" required>
@@ -240,7 +261,7 @@
                     <textarea name="message" rows="5" placeholder="What are you working toward, and what is currently getting in the way?" required></textarea>
                 </label>
                 <button class="button button-primary" type="submit">Submit Enquiry</button>
-                <p class="form-note">Replace the placeholder form endpoint before going live.</p>
+                <p class="form-note">FormSubmit will send enquiries to costi.filo.pt@gmail.com after the address is activated on first use.</p>
                 <p class="form-status" id="form-status" aria-live="polite"></p>
             </form>
         </section>
@@ -248,7 +269,7 @@
 
     <footer class="site-footer">
         <p>© <span id="current-year"></span> Costi Filofie Personal Training</p>
-        <p>Final placeholders to replace: brand photo, business location, contact details, client testimonials, certifications.</p>
+        <p>Demo photos are loaded from Unsplash. Final placeholders to replace: business location, phone, Instagram, client testimonials, certifications.</p>
     </footer>
 
     <script src="script.js"></script>

@@ -28,10 +28,10 @@ if (form && status) {
 
             form.reset();
             status.classList.add("is-success");
-            status.textContent = "Thanks. Your enquiry has been sent.";
+            status.textContent = "Thanks. Your enquiry has been sent to Costi.";
         } catch (error) {
             status.classList.add("is-error");
-            status.textContent = "Set a real form endpoint before publishing, then try again.";
+            status.textContent = "The email form is not active yet or the network request failed. FormSubmit may require initial email activation.";
         }
     });
 }
