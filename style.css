@@ -76,6 +76,7 @@ main,
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 0 1rem;
+    gap: 1rem;
 }
 
 .brand,
@@ -93,9 +94,36 @@ h3 {
 
 .site-nav {
     display: flex;
+    flex-wrap: wrap;
     gap: 1.2rem;
     color: var(--muted);
     font-size: 0.95rem;
+}
+
+.language-switcher {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.35rem;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.42);
+}
+
+.language-button {
+    border: 0;
+    background: transparent;
+    color: var(--muted);
+    padding: 0.45rem 0.8rem;
+    border-radius: 999px;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.language-button.is-active {
+    background: var(--ink);
+    color: #fff9f3;
 }
 
 .hero {
@@ -499,7 +527,17 @@ h2 {
     .site-header,
     .site-footer {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: stretch;
+    }
+
+    .language-switcher {
+        order: 3;
+        align-self: flex-start;
+    }
+
+    .site-nav {
+        width: 100%;
+        justify-content: flex-start;
     }
 
     h1,
@@ -528,12 +566,91 @@ h2 {
         gap: 0.65rem;
     }
 
+    .site-nav {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.55rem;
+    }
+
+    .site-nav a,
+    .language-button,
+    .button {
+        min-height: 2.9rem;
+    }
+
+    .site-nav a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.7rem 0.9rem;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.42);
+    }
+
+    .language-switcher {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .language-button {
+        flex: 1 1 0;
+    }
+
     .hero {
         padding-top: 1rem;
     }
 
+    .hero-copy {
+        padding: 1.1rem 0 0.2rem;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    .hero-points,
+    .contact-details {
+        flex-direction: column;
+    }
+
+    .hero-points li,
+    .contact-details li {
+        width: 100%;
+        text-align: center;
+    }
+
     .section {
         padding: 3.2rem 0;
+    }
+
+    .hero-card,
+    .accent-panel,
+    .contact-form,
+    .testimonial-card,
+    .info-card,
+    .faq-list article,
+    .trust-strip article {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .results-banner {
+        aspect-ratio: 4 / 3;
+    }
+
+    .contact-form {
+        padding: 1.2rem;
+    }
+
+    .site-footer {
+        align-items: center;
+        text-align: center;
+        padding-top: 0.5rem;
     }
 
     .accent-panel,

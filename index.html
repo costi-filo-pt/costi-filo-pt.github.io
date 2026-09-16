@@ -16,31 +16,34 @@
 <body>
     <header class="site-header">
         <div class="brand">Costi Filofie</div>
+        <div class="language-switcher" aria-label="Language switcher">
+            <button class="language-button is-active" type="button" data-language="en">EN</button>
+            <button class="language-button" type="button" data-language="ro">RO</button>
+        </div>
         <nav class="site-nav" aria-label="Main navigation">
-            <a href="#about">About</a>
-            <a href="#services">Coaching</a>
-            <a href="#results">Results</a>
-            <a href="#contact">Contact</a>
+            <a href="#about" data-i18n="nav.about">About</a>
+            <a href="#services" data-i18n="nav.services">Coaching</a>
+            <a href="#results" data-i18n="nav.results">Results</a>
+            <a href="#contact" data-i18n="nav.contact">Contact</a>
         </nav>
     </header>
 
     <main>
         <section class="hero">
             <div class="hero-copy">
-                <p class="eyebrow">Personal Training for Real Life</p>
-                <h1>Build strength, move better, and stay consistent with coaching from Costi Filofie.</h1>
-                <p class="hero-text">
+                <p class="eyebrow" data-i18n="hero.eyebrow">Personal Training for Real Life</p>
+                <h1 data-i18n="hero.title">Build strength, move better, and stay consistent with coaching from Costi Filofie.</h1>
+                <p class="hero-text" data-i18n="hero.text">
                     Costi helps professionals, parents, and complete beginners train with structure, confidence, and a plan they can actually sustain.
-                    This page uses placeholder contact details so you can swap in the final business information later.
                 </p>
                 <div class="hero-actions">
-                    <a class="button button-primary" href="#contact">Book a Consultation</a>
-                    <a class="button button-secondary" href="#services">See Coaching Options</a>
+                    <a class="button button-primary" href="#contact" data-i18n="hero.primaryCta">Book a Consultation</a>
+                    <a class="button button-secondary" href="#services" data-i18n="hero.secondaryCta">See Coaching Options</a>
                 </div>
                 <ul class="hero-points" aria-label="Key benefits">
-                    <li>1-to-1 coaching</li>
-                    <li>Beginner-friendly programming</li>
-                    <li>Nutrition and habit guidance</li>
+                    <li data-i18n="hero.point1">1-to-1 coaching</li>
+                    <li data-i18n="hero.point2">Beginner-friendly programming</li>
+                    <li data-i18n="hero.point3">Nutrition and habit guidance</li>
                 </ul>
             </div>
             <aside class="hero-card" aria-label="Coach introduction">
@@ -50,24 +53,23 @@
                         alt="Personal training session in a gym"
                     >
                 </figure>
-                <div class="card-kicker">Meet Your Coach</div>
+                <div class="card-kicker" data-i18n="heroCard.kicker">Meet Your Coach</div>
                 <h2>Costi Filofie</h2>
-                <p>
+                <p data-i18n="heroCard.text">
                     Personal trainer focused on strength, fat loss, posture, and long-term lifestyle change.
-                    Add Costi's final qualifications, certifications, and transformation story here.
                 </p>
                 <dl>
                     <div>
-                        <dt>Location</dt>
+                        <dt data-i18n="heroCard.locationLabel">Location</dt>
                         <dd>[City / Studio Location]</dd>
                     </div>
                     <div>
-                        <dt>Sessions</dt>
-                        <dd>In-person and online</dd>
+                        <dt data-i18n="heroCard.sessionsLabel">Sessions</dt>
+                        <dd data-i18n="heroCard.sessionsValue">In-person and online</dd>
                     </div>
                     <div>
-                        <dt>Specialties</dt>
-                        <dd>Strength, fat loss, mobility</dd>
+                        <dt data-i18n="heroCard.specialtiesLabel">Specialties</dt>
+                        <dd data-i18n="heroCard.specialtiesValue">Strength, fat loss, mobility</dd>
                     </div>
                 </dl>
             </aside>
@@ -76,22 +78,22 @@
         <section class="trust-strip" aria-label="Key numbers">
             <article>
                 <strong>12+</strong>
-                <span>Week transformation plans</span>
+                <span data-i18n="trust.plan">Week transformation plans</span>
             </article>
             <article>
                 <strong>1:1</strong>
-                <span>Coaching and accountability</span>
+                <span data-i18n="trust.coaching">Coaching and accountability</span>
             </article>
             <article>
                 <strong>100%</strong>
-                <span>Tailored to schedule and goals</span>
+                <span data-i18n="trust.tailored">Tailored to schedule and goals</span>
             </article>
         </section>
 
         <section class="section split-section" id="about">
             <div>
-                <p class="eyebrow">Why Clients Work With Costi</p>
-                <h2>Coaching that fits busy lives instead of fighting them.</h2>
+                <p class="eyebrow" data-i18n="about.eyebrow">Why Clients Work With Costi</p>
+                <h2 data-i18n="about.title">Coaching that fits busy lives instead of fighting them.</h2>
             </div>
             <div class="section-copy">
                 <figure class="image-frame section-photo">
@@ -100,11 +102,11 @@
                         alt="Athlete stretching with resistance bands"
                     >
                 </figure>
-                <p>
+                <p data-i18n="about.text1">
                     Many people do not need more random workouts. They need a clear plan, honest feedback, and someone who knows how to
                     turn good intentions into weekly action. Costi's coaching is built around exactly that.
                 </p>
-                <p>
+                <p data-i18n="about.text2">
                     Whether the goal is getting leaner, moving without pain, building muscle, or feeling comfortable in the gym again,
                     the process stays simple: assess, plan, coach, adapt, repeat.
                 </p>
@@ -113,62 +115,62 @@
 
         <section class="section" id="services">
             <div class="section-heading">
-                <p class="eyebrow">Coaching Pillars</p>
-                <h2>One-page clarity on what the programme covers.</h2>
+                <p class="eyebrow" data-i18n="services.eyebrow">Coaching Pillars</p>
+                <h2 data-i18n="services.title">One-page clarity on what the programme covers.</h2>
             </div>
             <div class="card-grid">
                 <article class="info-card">
-                    <h3>Strength Training</h3>
-                    <p>Structured sessions designed around technique, progression, and confidence under load.</p>
+                    <h3 data-i18n="services.card1Title">Strength Training</h3>
+                    <p data-i18n="services.card1Text">Structured sessions designed around technique, progression, and confidence under load.</p>
                 </article>
                 <article class="info-card">
-                    <h3>Fat Loss Support</h3>
-                    <p>Practical calorie awareness, better food habits, and a pace that is sustainable outside the gym.</p>
+                    <h3 data-i18n="services.card2Title">Fat Loss Support</h3>
+                    <p data-i18n="services.card2Text">Practical calorie awareness, better food habits, and a pace that is sustainable outside the gym.</p>
                 </article>
                 <article class="info-card">
-                    <h3>Mobility and Posture</h3>
-                    <p>Movement-focused work to improve range, reduce stiffness, and make training feel better.</p>
+                    <h3 data-i18n="services.card3Title">Mobility and Posture</h3>
+                    <p data-i18n="services.card3Text">Movement-focused work to improve range, reduce stiffness, and make training feel better.</p>
                 </article>
                 <article class="info-card">
-                    <h3>Accountability</h3>
-                    <p>Check-ins, progress tracking, and simple targets that keep clients moving forward.</p>
+                    <h3 data-i18n="services.card4Title">Accountability</h3>
+                    <p data-i18n="services.card4Text">Check-ins, progress tracking, and simple targets that keep clients moving forward.</p>
                 </article>
             </div>
         </section>
 
         <section class="section accent-panel">
             <div class="section-heading narrow">
-                <p class="eyebrow">What Clients Can Expect</p>
-                <h2>A practical roadmap from day one.</h2>
+                <p class="eyebrow" data-i18n="roadmap.eyebrow">What Clients Can Expect</p>
+                <h2 data-i18n="roadmap.title">A practical roadmap from day one.</h2>
             </div>
             <div class="roadmap">
                 <article>
                     <span>01</span>
-                    <h3>Starter Assessment</h3>
-                    <p>Discuss goals, injuries, training history, schedule, and nutrition habits.</p>
+                    <h3 data-i18n="roadmap.step1Title">Starter Assessment</h3>
+                    <p data-i18n="roadmap.step1Text">Discuss goals, injuries, training history, schedule, and nutrition habits.</p>
                 </article>
                 <article>
                     <span>02</span>
-                    <h3>Tailored Programme</h3>
-                    <p>Build a plan around available days, equipment access, and current fitness level.</p>
+                    <h3 data-i18n="roadmap.step2Title">Tailored Programme</h3>
+                    <p data-i18n="roadmap.step2Text">Build a plan around available days, equipment access, and current fitness level.</p>
                 </article>
                 <article>
                     <span>03</span>
-                    <h3>Weekly Coaching</h3>
-                    <p>Use clear progression, form feedback, and realistic adjustments when life gets busy.</p>
+                    <h3 data-i18n="roadmap.step3Title">Weekly Coaching</h3>
+                    <p data-i18n="roadmap.step3Text">Use clear progression, form feedback, and realistic adjustments when life gets busy.</p>
                 </article>
                 <article>
                     <span>04</span>
-                    <h3>Visible Progress</h3>
-                    <p>Track strength, energy, body composition, and consistency instead of guessing.</p>
+                    <h3 data-i18n="roadmap.step4Title">Visible Progress</h3>
+                    <p data-i18n="roadmap.step4Text">Track strength, energy, body composition, and consistency instead of guessing.</p>
                 </article>
             </div>
         </section>
 
         <section class="section" id="results">
             <div class="section-heading">
-                <p class="eyebrow">Results and Social Proof</p>
-                <h2>Replace these placeholders with real client wins when available.</h2>
+                <p class="eyebrow" data-i18n="results.eyebrow">Results and Social Proof</p>
+                <h2 data-i18n="results.title">Replace these placeholders with real client wins when available.</h2>
             </div>
             <div class="results-banner image-frame">
                 <img
@@ -178,98 +180,97 @@
             </div>
             <div class="testimonial-grid">
                 <blockquote class="testimonial-card">
-                    <p>
+                    <p data-i18n="results.quote1">
                         "Working with Costi gave me structure for the first time. I stopped skipping sessions, got stronger, and finally felt in control of my routine."
                     </p>
-                    <footer>Placeholder Client A, 12-week strength plan</footer>
+                    <footer data-i18n="results.footer1">Placeholder Client A, 12-week strength plan</footer>
                 </blockquote>
                 <blockquote class="testimonial-card">
-                    <p>
+                    <p data-i18n="results.quote2">
                         "The biggest change was consistency. The workouts were challenging, but realistic enough that I could keep showing up every week."
                     </p>
-                    <footer>Placeholder Client B, body recomposition plan</footer>
+                    <footer data-i18n="results.footer2">Placeholder Client B, body recomposition plan</footer>
                 </blockquote>
                 <blockquote class="testimonial-card">
-                    <p>
+                    <p data-i18n="results.quote3">
                         "I started as a complete beginner. Costi made the gym feel simple, safe, and focused, which removed a lot of stress."
                     </p>
-                    <footer>Placeholder Client C, beginner coaching</footer>
+                    <footer data-i18n="results.footer3">Placeholder Client C, beginner coaching</footer>
                 </blockquote>
             </div>
         </section>
 
         <section class="section split-section faq-section">
             <div>
-                <p class="eyebrow">Common Questions</p>
-                <h2>Useful copy for visitors who are interested but not ready yet.</h2>
+                <p class="eyebrow" data-i18n="faq.eyebrow">Common Questions</p>
+                <h2 data-i18n="faq.title">Useful copy for visitors who are interested but not ready yet.</h2>
             </div>
             <div class="faq-list">
                 <article>
-                    <h3>Do I need gym experience?</h3>
-                    <p>No. This page is written for beginners as well as people returning after a long break.</p>
+                    <h3 data-i18n="faq.q1">Do I need gym experience?</h3>
+                    <p data-i18n="faq.a1">No. This page is written for beginners as well as people returning after a long break.</p>
                 </article>
                 <article>
-                    <h3>Can I train online?</h3>
-                    <p>Yes. Add Costi's final online coaching process, check-in frequency, and preferred tools here.</p>
+                    <h3 data-i18n="faq.q2">Can I train online?</h3>
+                    <p data-i18n="faq.a2">Yes. Costi can coach both in person and online, with check-ins and training adjustments based on your schedule.</p>
                 </article>
                 <article>
-                    <h3>How do I start?</h3>
-                    <p>Use the form below and Costi can follow up with a consultation, questionnaire, or trial session.</p>
+                    <h3 data-i18n="faq.q3">How do I start?</h3>
+                    <p data-i18n="faq.a3">Use the form below and Costi can follow up with a consultation, questionnaire, or trial session.</p>
                 </article>
             </div>
         </section>
 
         <section class="section contact-section" id="contact">
             <div class="contact-copy">
-                <p class="eyebrow">Start the Conversation</p>
-                <h2>Book a consultation or ask a question.</h2>
-                <p>
-                    The form below is wired for a front-end success message. To make submissions arrive by email,
-                    replace the placeholder form action with a real endpoint such as Formspree.
+                <p class="eyebrow" data-i18n="contact.eyebrow">Start the Conversation</p>
+                <h2 data-i18n="contact.title">Book a consultation or ask a question.</h2>
+                <p data-i18n="contact.text">
+                    Send a message below and Costi can follow up by email to discuss your goals, schedule, and the right coaching format.
                 </p>
                 <ul class="contact-details">
-                    <li>Email: costi.filo.pt@gmail.com</li>
-                    <li>Phone / WhatsApp: [Your Number]</li>
-                    <li>Instagram: [@YourHandle]</li>
+                    <li data-i18n="contact.email">Email: vlad_serbanik@yahoo.com</li>
+                    <li data-i18n="contact.phone">Phone / WhatsApp: [Your Number]</li>
+                    <li data-i18n="contact.instagram">Instagram: [@YourHandle]</li>
                 </ul>
             </div>
-            <form class="contact-form" id="lead-form" action="https://formsubmit.co/ajax/costi.filo.pt@gmail.com" method="POST">
+            <form class="contact-form" id="lead-form" action="https://formsubmit.co/ajax/vlad_serbanik@yahoo.com" method="POST">
                 <input type="hidden" name="_subject" value="New enquiry from Costi Filofie website">
                 <input type="hidden" name="_template" value="table">
                 <input type="hidden" name="_captcha" value="false">
                 <label>
-                    Full Name
-                    <input type="text" name="name" placeholder="Your full name" required>
+                    <span data-i18n="form.nameLabel">Full Name</span>
+                    <input type="text" name="name" placeholder="Your full name" data-i18n-placeholder="form.namePlaceholder" required>
                 </label>
                 <label>
-                    Email Address
-                    <input type="email" name="email" placeholder="you@example.com" required>
+                    <span data-i18n="form.emailLabel">Email Address</span>
+                    <input type="email" name="email" placeholder="you@example.com" data-i18n-placeholder="form.emailPlaceholder" required>
                 </label>
                 <label>
-                    Main Goal
+                    <span data-i18n="form.goalLabel">Main Goal</span>
                     <select name="goal" required>
-                        <option value="">Select one</option>
-                        <option>Lose fat</option>
-                        <option>Build muscle</option>
-                        <option>Improve strength</option>
-                        <option>Move with less pain</option>
-                        <option>Get back into training</option>
+                        <option value="" data-i18n="form.goalOption0">Select one</option>
+                        <option data-i18n="form.goalOption1">Lose fat</option>
+                        <option data-i18n="form.goalOption2">Build muscle</option>
+                        <option data-i18n="form.goalOption3">Improve strength</option>
+                        <option data-i18n="form.goalOption4">Move with less pain</option>
+                        <option data-i18n="form.goalOption5">Get back into training</option>
                     </select>
                 </label>
                 <label>
-                    Tell Costi About Your Situation
-                    <textarea name="message" rows="5" placeholder="What are you working toward, and what is currently getting in the way?" required></textarea>
+                    <span data-i18n="form.messageLabel">Tell Costi About Your Situation</span>
+                    <textarea name="message" rows="5" placeholder="What are you working toward, and what is currently getting in the way?" data-i18n-placeholder="form.messagePlaceholder" required></textarea>
                 </label>
-                <button class="button button-primary" type="submit">Submit Enquiry</button>
-                <p class="form-note">FormSubmit will send enquiries to costi.filo.pt@gmail.com after the address is activated on first use.</p>
+                <button class="button button-primary" type="submit" data-i18n="form.submit">Submit Enquiry</button>
+                <p class="form-note" data-i18n="form.note">FormSubmit will send enquiries to vlad_serbanik@yahoo.com after the address is activated on first use.</p>
                 <p class="form-status" id="form-status" aria-live="polite"></p>
             </form>
         </section>
     </main>
 
     <footer class="site-footer">
-        <p>© <span id="current-year"></span> Costi Filofie Personal Training</p>
-        <p>Demo photos are loaded from Unsplash. Final placeholders to replace: business location, phone, Instagram, client testimonials, certifications.</p>
+        <p><span data-i18n="footer.copyPrefix">©</span> <span id="current-year"></span> <span data-i18n="footer.copySuffix">Costi Filofie Personal Training</span></p>
+        <p data-i18n="footer.note">Demo photos are loaded from Unsplash. Final placeholders to replace: business location, phone, Instagram, client testimonials, certifications.</p>
     </footer>
 
     <script src="script.js"></script>
